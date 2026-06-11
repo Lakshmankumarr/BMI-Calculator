@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        BMI Health Tracker
+    </title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <h1>
+                BMI Health Tracker
+            </h1>
+
+            <p>
+                Track Your Health & Fitness Journey
+            </p>
+
+        </header>
+
+        <!-- Dashboard -->
+
+        <section class="dashboard">
+
+            <div class="card">
+
+                <h3>
+                    📊 Current BMI
+                </h3>
+
+                <span id="currentBMI">
+                    0
+                </span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    ❤️ Health Status
+                </h3>
+
+                <span id="healthStatus">
+                    -
+                </span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    🎯 Ideal Weight
+                </h3>
+
+                <span id="idealWeight">
+                    -
+                </span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    📈 Total Records
+                </h3>
+
+                <span id="totalRecords">
+                    0
+                </span>
+
+            </div>
+
+        </section>
+
+        <!-- BMI Form -->
+
+        <section class="form-section">
+
+            <input
+                type="number"
+                id="height"
+                placeholder="Height (cm)">
+
+            <input
+                type="number"
+                id="weight"
+                placeholder="Weight (kg)">
+
+            <input
+                type="number"
+                id="age"
+                placeholder="Age">
+
+            <select id="gender">
+
+                <option value="">
+                    Select Gender
+                </option>
+
+                <option value="Male">
+                    Male
+                </option>
+
+                <option value="Female">
+                    Female
+                </option>
+
+            </select>
+
+            <button id="calculateBtn">
+
+                Calculate BMI
+
+            </button>
+
+        </section>
+
+        <!-- Result Section -->
+
+        <section class="result-section">
+
+            <h2>
+                BMI Result
+            </h2>
+
+            <div class="result-card">
+
+                <p>
+                    BMI:
+                    <strong id="bmiValue">
+                        0
+                    </strong>
+                </p>
+
+                <p>
+                    Category:
+                    <strong id="bmiCategory">
+                        -
+                    </strong>
+                </p>
+
+                <p>
+                    Health Tip:
+                    <strong id="healthTip">
+                        Enter your details to calculate BMI.
+                    </strong>
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- History -->
+
+        <section class="history-section">
+
+            <h2>
+                BMI History
+            </h2>
+
+            <div id="historyContainer">
+
+            </div>
+
+        </section>
+
+        <!-- Empty State -->
+
+        <section
+            id="emptyState"
+            class="empty-state">
+
+            <h2>
+                No Records Yet
+            </h2>
+
+            <p>
+                Calculate your BMI to start tracking.
+            </p>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
